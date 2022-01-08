@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact</title>
+</head>
+<body>
+  <!--Back to top button-->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <!--JavaScript for button-->
+  <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+      
+      // Show the buton after 20px 
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // Click go back to top
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+
+    <!--Menu nav-->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">Main page</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact info. & Enquiries</a>
+        </div>
+      </div>
+      
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      
+      <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      </script>
+
+  
+
+<div class="title">
+    Contact info.
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="card">
+  <img src="assets/imgs/profile-img.jpeg" alt="Seiji" style="width:100%">
+  <h1>Seiji Takahashi</h1>
+  <p class="card-title">Junior Java Developer</p>
+  <p>University of London*</p>
+  <div style="margin: 24px 0;">
+    <a href="mailto:takahashi.seiji14@gmail.com"><i class="fa fa-envelope"></i></a> 
+    <a target="blank" href="https://github.com/SeijiTaka14?tab=repositories"><i class="fa fa-github"></i></a>  
+    <a target="blank" href="https://www.linkedin.com/in/seiji-takahashi14"><i class="fa fa-linkedin"></i></a>  
+    
+  </div>
+  <br>
+</div>
+<br>
+<br>
+<br>
+
+<div class="title">
+  Enquiries
+</div>
+
+<br>
+<br>
+<br>
+<form>
+  <div>
+    <label for="name" id="name">Name: </label>
+       <input id="name"  class="name" type="text" name="name" placeholder="Your name" required>
+   <div>
+    <br>
+    <br>
+
+    <div class="email">
+      <label for="email">
+          E-mail: 
+      </label>
+      <input id="email" type="email" class="email" name="email" placeholder="Your E-mail" required>
+  </div>
+  <br>
+  <br>
+  <div class="subject">Subject: </div>
+  <div class="subject">
+  
+    <textarea name="subject" id="subject-input" class="subject" cols="30" rows="10" placeholder="Your message"></textarea>
+  </div>
+
+  <div class="submit">
+    <a href="mailto:takahashi.seiji14@gmail.com">Submit</a>
+  </div>
+
+
+
+
+
+</body>
+</html>

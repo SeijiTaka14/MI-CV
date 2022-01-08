@@ -1,0 +1,146 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/*Back to top button*/
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: white; /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/*Menu*/
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    font-family: 'Roboto', sans-serif;
+    }
+  }
+
+  /*Title*/
+  .title {
+    font-family: 'Roboto', sans-serif;
+    color: black; 
+    font-size: 2cm;
+    text-align: center;
+  }
+
+  /*Profile card*/
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+  }
+  
+  .card-title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+
+  /*Enquiries*/
+
+  #name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+    border: thin;
+  }
+
+  .email {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+    border: thin;
+  }
+
+  
+  .subject {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+    border: thin;
+  }
+
+  #subject-input {
+    width: 500px;
+    height: 200px;
+    font-size: x-large;
+  }
+
+  .submit {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    font-size: x-large;
+  }
+  
+  
+ 

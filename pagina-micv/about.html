@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!--Back to top button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!--JavaScript for button-->
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // Show the buton after 20px 
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // Click go back to top
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+    
+    <!--Menu nav-->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">Main page</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact info. & Enquiries</a>
+        </div>
+      </div>
+      
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      
+      <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      </script>
+
+
+    <div class="title">
+          About
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <!--Objectives-->
+    <div class="subtitles">
+        Objectives
+    </div>
+    <br>
+    <br>
+    <p class="objectives">To create new, improved and easier to use technology</p>
+    <p class="objectives-right">To improve people's lifes through technology</p>
+    <p class="objectives">To make technology accesible for everyone</p>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <!--Technical skills / skills bar-->
+    <div class="subtitles">Technical skills</div>
+
+    <p class="tech">HTML</p>
+    <div class="container">
+    <div class="skills html">90%</div>
+    </div>
+
+    <p class="tech">CSS</p>
+    <div class="container">
+    <div class="skills css">80%</div>
+    </div>
+
+    <p class="tech">JavaScript</p>
+    <div class="container">
+    <div class="skills js">65%</div>
+    </div>
+
+    <p class="tech">PYTHON</p>
+    <div class="container">
+    <div class="skills python">75%</div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--Soft skills-->
+    <div class="subtitles">
+        Soft skills
+    </div>
+
+    <p class="tech">Social intelligence</p>
+    <div class="container">
+    <div class="skills social-i">100%</div>
+    </div>
+
+    <p class="tech">Leadership</p>
+    <div class="container">
+    <div class="skills leadership">80%</div>
+    </div>
+
+    <p class="tech">Honesty</p>
+    <div class="container">
+    <div class="skills honesty">95%</div>
+    </div>
+
+    <p class="tech">Teamwork</p>
+    <div class="container">
+    <div class="skills teamwork">85%</div>
+    </div>
+
+    <p class="tech">Eager to learn</p>
+    <div class="container">
+    <div class="skills learn">80%</div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--Education-->
+    <div class="subtitles">
+        Education
+    </div>
+
+    <p class="education">English level C2 / Young Learners Teacher Course</p>
+    <br>
+    <p class="education">Spanish native language</p>
+    <br>
+    <p class="education">2 years of Bachelor's degree in economics</p>
+    <br>
+    <p class="education">Generation Java Full-Stack Bootcamp</p>
+    <br>
+    <p class="education">Bachelor's degree in Computer Science by the University of London*</p>
+    
+    
+    
+    
+
+
+
+
+</body>
+</html>

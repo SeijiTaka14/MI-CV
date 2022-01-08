@@ -1,0 +1,198 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    scroll-behavior: smooth;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3cm;
+    text-align: center;
+    margin-top: 0.5cm;
+    color: black; 
+}
+
+.title2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2cm;
+    text-align: center;
+    margin-top: 0.5cm;
+    color: black;
+}
+  /*Menu*/
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    font-family: 'Roboto', sans-serif;
+    }
+  }
+  
+  /*Loader*/
+  .loader {
+    border: 16px #f3f3f3; /* Light grey */
+    border-top: 3px solid #0004ff; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1.5s linear infinite;
+    margin-left: 15cm;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /*Explore more button and arrow*/
+  .btn {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 13px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 6.3cm;
+    font-size: 1cm;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  
+  /*Vision*/
+  #subtitle {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1cm;
+    margin-left: 1cm;
+
+  }
+
+  
+  /*Back to top button*/
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: white; /* Set a background color */
+    color: black; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+  }
+
+  /*Gallery*/
+  .container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    color: #818181;
+  }
+  
+  .container:hover .overlay-image {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #black-text {
+    color: black;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seiji Takahashi</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="index.html">Main page</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact info. & Enquiries</a>
+        </div>
+      </div>
+      
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      
+      <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      </script>
+
+
+    <div class="title">
+        Seiji Takahashi
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="loader"></div>
+    <br>
+    <br>
+    <br>
+    <div class="title2">
+        Technology for the people
+    </div>
+
+    <br>
+    <br>
+    
+    
+    <button class="btn explore"> <a href="#subtitle" class="btn">Explore gallery <i class="arrow down"></i> </a> </button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+   
+    
+    <!--Back to top button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!--JavaScript for button-->
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // Show the buton after 20px 
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // Click go back to top
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+
+<div class="container">
+  <img src="assets/imgs/img-camion.jpeg" alt="Truck into the sunset" class="image">
+  <div class="overlay-image">
+    <div class="text">Truck into the sunset</div>
+  </div>
+</div>
+
+<br>
+<br>
+<div class="container">
+  <img src="assets/imgs/img-colina.jpeg" alt="Sunset on a highway" class="image">
+  <div class="overlay-image">
+    <div class="text" id="black-text">Sunset on a highway</div>
+  </div>
+</div>
+<br>
+<br>
+
+<div class="container">
+  <img src="assets/imgs/img-flores.JPG" alt="Blurred Flowers" class="image">
+  <div class="overlay-image">
+    <div class="text" id="black-text">Blurred Flowers</div>
+  </div>
+</div>
+<br>
+<br>
+<div class="container">
+  <img src="assets/imgs/img-atardecer.jpeg" alt="Sunset" class="image">
+  <div class="overlay-image">
+    <div class="text">Sunset</div>
+  </div>
+</div>
+<br>
+<br>
+<div class="container">
+  <img src="assets/imgs/img-marquesitas2.jpeg" alt="Marquesitas yucatecas" class="image">
+  <div class="overlay-image">
+    <div class="text">Marquesitas Yucatecas in Oaxaca</div>
+  </div>
+</div>
+
+
+</body>
+</html>
